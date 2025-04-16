@@ -229,74 +229,429 @@
   {@html jsonldScript}
 </svelte:head>
 
-<div class="hero min-h-[60vh]">
-  <div class="hero-content text-center py-12">
-    <div class="max-w-xl">
-      <div
-        class="text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-linear-to-r from-primary to-accent mb-3 md:mb-7 pb-1"
-      >
-        SaaS Starter Demo
-      </div>
+<!-- Hero Section -->
+<section class="relative w-full grid place-items-center">
+  <!-- Background dots grid -->
+  <div
+    class="absolute inset-0 h-full w-full bg-[radial-gradient(hsl(214,22%,88%)_1px,transparent_1px)] [background-size:20px_20px]"
+  ></div>
 
-      <div
-        class="text-4xl md:text-6xl font-bold px-2"
-        style="line-height: 1.2;"
-      >
-        The
-        <span
-          class="underline decoration-secondary decoration-4 md:decoration-[6px]"
-          >open source</span
-        >,
-        <span
-          class="underline decoration-secondary decoration-4 md:decoration-[6px]"
-          >fast</span
-        >, and
-        <span
-          class="underline decoration-secondary decoration-4 md:decoration-[6px]"
-          >free to host</span
+  <!-- Hero elements -->
+  <div
+    class="isolate w-full max-w-screen-lg px-8 sm:px-20 pb-6 pt-12 max-[400px]:pt-4"
+  >
+    <div class="w-full max-[400px]:px-0 gap-8">
+      <div class="pb-0 md:pb-6 sm:pb-3 flex flex-col items-center">
+        <div
+          class="flex flex-row items-center gap-4 max-[400px]:scale-75 origin-bottom-left duration-100 mb-12"
         >
-        <span> SaaS template</span>
-      </div>
-      <div class="mt-6 md:mt-10 text-sm md:text-lg">
-        Built with <a
-          href="https://kit.svelte.dev"
-          class="link font-bold"
-          target="_blank">SvelteKit</a
-        >,
-        <a href="https://supabase.com" class="link font-bold" target="_blank"
-          >Supabase</a
-        >,
-        <a href="https://stripe.com" class="link font-bold" target="_blank"
-          >Stripe</a
-        >,
-        <a href="https://tailwindcss.com" class="link font-bold" target="_blank"
-          >Tailwind</a
-        >,
-        <a href="https://daisyui.com" class="link font-bold" target="_blank"
-          >DaisyUI</a
-        >, and
-        <a
-          href="https://www.postgresql.org"
-          class="link font-bold"
-          target="_blank">Postgres</a
-        >
-      </div>
-      <div
-        class="mt-6 md:mt-4 flex flex-row flex-wrap gap-4 place-content-center"
-      >
-        <a href="https://github.com/CriticalMoments/CMSaasStarter">
-          <button class="btn btn-primary px-6">★ us on Github</button>
-        </a>
-        <a
-          href="https://github.com/CriticalMoments/CMSaasStarter/tree/main#saas-starter"
-        >
-          <button class="btn btn-outline btn-primary px-6">Read the Docs</button
+          <!-- Logo placeholder -->
+          <h1
+            class="font-source-code-pro text-gray-900 text-4xl lg:text-6xl font-[400]"
           >
-        </a>
+            StoryMate
+          </h1>
+        </div>
+
+        <h2
+          class="text-gray-900 text-3xl lg:text-4xl text-center mb-6 font-[400] leading-tight"
+        >
+          No-Code
+          <span
+            class="bg-gradient-to-br from-[#2af498] to-[#009ffd] bg-clip-text text-transparent font-[700]"
+          >
+            Interactive Storymaking
+          </span>
+          with branching narratives, special effects, and structured content
+        </h2>
+
+        <button
+          class="font-semibold text-white hover:border-[#18c5fe] max-[400px]:w-[calc(100vw-4rem)] bg-gradient-to-br from-[#2af498] to-[#009ffd] btn btn-lg"
+        >
+          Start Writing
+        </button>
       </div>
     </div>
   </div>
-</div>
+</section>
+
+<!-- New Features Section -->
+<main>
+  <div class="w-full max-w-screen-lg px-8 mx-auto">
+    <div class="p-4"></div>
+
+    <section class="p-12 bg-white rounded-3xl">
+      <h1
+        class="text-gray-900 font-[100] text-4xl leading-tight text-center"
+      >
+        An out-of-the-way writing experience
+      </h1>
+
+      <!-- FeatureGallery placeholder -->
+    </section>
+
+    <div class="p-8"></div>
+
+    <!-- StoryMate Overview cols -->
+    <section class="py-8">
+      <div class="mb-8 text-center">
+        <h2 class="text-gray-900 text-2xl font-bold">
+          Write it, customize, then publish
+        </h2>
+
+        <h2 class="text-gray-500 text-xl font-[400]">
+          Simple. Streamlined. Distraction-free
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- FeatureCard placeholder -->
+        <div class="p-4 border rounded">
+          <p>[Icon: PenLine] <strong>Distraction-Free Writing</strong></p>
+          <p>A clean, focused interface to keep you in the zone.</p>
+        </div>
+
+        <!-- FeatureCard placeholder -->
+        <div class="p-4 border rounded">
+          <p>[Icon: Workflow] <strong>Planning tools</strong></p>
+          <p>Visually structure and connect your ideas.</p>
+        </div>
+
+        <!-- FeatureCard placeholder -->
+        <div class="p-4 border rounded">
+          <p>[Icon: Palette] <strong>Customization</strong></p>
+          <p>Tailor the look and feel of your stories.</p>
+        </div>
+
+        <!-- FeatureCard placeholder -->
+        <div class="p-4 border rounded">
+          <p>[Icon: Split] <strong>Testing & Switching</strong></p>
+          <p>Use conditional logic to create unique interactive fiction paths.</p>
+        </div>
+
+        <!-- FeatureCard placeholder -->
+        <div class="p-4 border rounded">
+          <p>[Icon: Share] <strong>Publishing</strong></p>
+          <p>Publish your stories to the world.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="p-8"></div>
+
+    <!-- How it works and backstory cols -->
+    <section class="py-8 grid gap-16 grid-cols-1 md:grid-cols-2 text-gray-800">
+      <article class="p-8 bg-white rounded-xl border border-gray-300">
+        <h2 class="text-gray-900 text-2xl font-bold">How StoryMate Works</h2>
+
+        <div class="p-4"></div>
+
+        <ol class="text-lg font-[350] space-y-3">
+          <li class="group flex flex-row place-items-center gap-2">
+            <div
+              class="flex-none place-self-start grid w-7 h-7 place-content-center border-2 border-gray-500 rounded-full font-source-code-pro text-md font-bold text-gray-500 group-hover:border-[#18c5fe] group-hover:text-gray-900"
+            >
+              1
+            </div>
+            <p>
+              Start with a <strong>blank page</strong> or one of our structured
+              <strong>templates</strong>.
+            </p>
+          </li>
+
+          <li class="group flex flex-row place-items-center gap-2">
+            <div
+              class="flex-none place-self-start grid w-7 h-7 place-content-center border-2 border-gray-500 rounded-full font-source-code-pro text-md font-bold text-gray-500 group-hover:border-[#18c5fe] group-hover:text-gray-900"
+            >
+              2
+            </div>
+            <p>
+              Write and <strong>connect passages</strong> to create branching
+              stories.
+            </p>
+          </li>
+
+          <li class="group flex flex-row place-items-center gap-2">
+            <div
+              class="flex-none place-self-start grid w-7 h-7 place-content-center border-2 border-gray-500 rounded-full font-source-code-pro text-md font-bold text-gray-500 group-hover:border-[#18c5fe] group-hover:text-gray-900"
+            >
+              3
+            </div>
+            <p>
+              Style your work with
+              <strong>custom formatting options</strong>.
+            </p>
+          </li>
+
+          <li class="group flex flex-row place-items-center gap-2">
+            <div
+              class="flex-none place-self-start grid w-7 h-7 place-content-center border-2 border-gray-500 rounded-full font-source-code-pro text-md font-bold text-gray-500 group-hover:border-[#18c5fe] group-hover:text-gray-900"
+            >
+              4
+            </div>
+            <p><strong>Publish, and share</strong> your story, your way.</p>
+          </li>
+        </ol>
+
+        <div class="p-3"></div>
+
+        <!-- StartWritingButton placeholder -->
+        <button
+          class="ml-auto border-none w-auto gap-4 px-0 hover:bg-transparent hover:text-[#18c5fe] pr-2 text-lg font-bold text-gray-800 btn btn-link"
+        >
+          Ready? Start writing now
+        </button>
+      </article>
+
+      <article class="p-8 bg-white rounded-xl border border-gray-300">
+        <h2 class="text-gray-900 text-2xl font-bold">
+          From Game Dev to Storytelling
+        </h2>
+
+        <div class="p-4"></div>
+
+        <p class="text-lg font-[350]">
+          Drawing inspiration from the Games Industry, StoryMate democratizes
+          interactive storytelling for writers, educators, and game designers—no
+          coding required.
+        </p>
+
+        <div class="p-4"></div>
+
+        <div class="flex flex-row place-items-center place-content-center gap-2">
+          <div class="border-b-2 border-[#d2d9e2] border-dashed w-full"></div>
+
+          <div
+            class="flex-none flex flex-row place-items-center place-content-center gap-2 text-gray-300"
+          >
+            <span>[Icon: Gamepad2]</span>
+            <span>[Icon: MoveRight]</span>
+            <span>[Icon: BookOpenText]</span>
+          </div>
+
+          <div class="border-b-2 border-[#d2d9e2] border-dashed w-full"></div>
+        </div>
+
+        <div class="p-4"></div>
+
+        <div
+          class="place-self-end text-lg leading-relaxed font-[350] italic text-gray-700"
+        >
+          StoryMate is on a mission to distill the best ideas from our favourite
+          platforms into one streamlined, intuitive tool, making it effortless to
+          write and publish interactive game stories, that pack an interactive
+          punch!
+        </div>
+      </article>
+    </section>
+
+    <div class="p-8"></div>
+
+    <!--Backstory break-->
+    <section
+      class="w-full flex flex-col place-items-center py-8 border-b-2 border-[#d2d9e2] border-dashed"
+    >
+      <h1 class="text-gray-900 font-[700] text-4xl leading-tight text-center px-8">
+        <span class="inline-block text-gray-500 scale-150 pr-4"
+          >[Icon: BookOpenText]</span
+        >Innovative
+        <span
+          class="font-[750] bg-gradient-to-br from-[#2af498] to-[#009ffd] bg-clip-text text-transparent"
+          >Storytelling</span
+        >
+      </h1>
+    </section>
+
+    <div class="p-4"></div>
+
+    <!--Game Industry Section cols-->
+    <section class="py-8 grid gap-24 grid-cols-1 md:grid-cols-2 text-gray-800">
+      <article class="//text-right">
+        <h2 class="text-gray-900 text-2xl font-bold">Writing Innovation</h2>
+
+        <div class="p-4"></div>
+
+        <p class="text-lg font-[350]">
+          We've transformed our game development tools into a powerful writing
+          platform.
+          <br />
+          <br />
+          Now writers can benefit from the same visual planning and structured
+          approach that makes game narratives so engaging.
+        </p>
+
+        <div class="p-4"></div>
+
+        <ul class="text-lg font-[350] space-y-2">
+          <li class="group">
+            <span class="w-7 h-7 translate-y-0.5 inline-block">
+              <span class="inline-block group-hover:hidden"
+                >[Icon: NotebookPen]</span
+              >
+              <span class="hidden group-hover:inline-block"
+                >[Icon: Sparkle]</span
+              >
+            </span>
+            <strong>Intuitive story structuring</strong>
+          </li>
+
+          <li class="group">
+            <span class="w-7 h-7 translate-y-0.5 inline-block">
+              <span class="inline-block group-hover:hidden"
+                >[Icon: BookOpenCheck]</span
+              >
+              <span class="hidden group-hover:inline-block"
+                >[Icon: Sparkle]</span
+              >
+            </span>
+            <strong>Creative writing workflows</strong>
+          </li>
+
+          <li class="group">
+            <span class="w-7 h-7 translate-y-0.5 inline-block">
+              <span class="inline-block group-hover:hidden"
+                >[Icon: BookUp2]</span
+              >
+              <span class="hidden group-hover:inline-block"
+                >[Icon: Sparkle]</span
+              >
+            </span>
+            <strong>Publishing-ready output</strong>
+          </li>
+        </ul>
+      </article>
+
+      <article>
+        <h2 class="text-gray-900 text-2xl font-bold">
+          Game Development Heritage
+        </h2>
+
+        <div class="p-4"></div>
+
+        <p class="text-lg font-[350]">
+          Born from years of game development experience, we understand the power
+          of visual planning and storytelling.
+          <br />
+          <br />
+          Our roots in creating interactive narratives have shaped how we approach
+          story development.
+        </p>
+
+        <div class="p-4"></div>
+
+        <ul class="text-lg font-[350] space-y-2">
+          <li class="group">
+            <span class="w-7 h-7 translate-y-0.5 inline-block">
+              <span class="inline-block group-hover:hidden"
+                >[Icon: Gamepad2]</span
+              >
+              <span class="hidden group-hover:inline-block"
+                >[Icon: Sparkle]</span
+              >
+            </span>
+            <strong>Interactive storytelling expertise</strong>
+          </li>
+
+          <li class="group">
+            <span class="w-7 h-7 translate-y-0.5 inline-block">
+              <span class="inline-block group-hover:hidden"
+                >[Icon: Repeat2]</span
+              >
+              <span class="hidden group-hover:inline-block"
+                >[Icon: Sparkle]</span
+              >
+            </span>
+            <strong>Non-linear narrative planning</strong>
+          </li>
+
+          <li class="group">
+            <span class="w-7 h-7 translate-y-0.5 inline-block">
+              <span class="inline-block group-hover:hidden"
+                >[Icon: ScanEye]</span
+              >
+              <span class="hidden group-hover:inline-block"
+                >[Icon: Sparkle]</span
+              >
+            </span>
+            <strong>Engagement-focused design</strong>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <div class="p-4"></div>
+
+    <!-- Advanced Features placeholder -->
+    <!-- <AdvancedFeatures /> -->
+
+    <div class="p-8"></div>
+
+    <!--From Aotearoa-->
+    <section class="w-full flex flex-col place-items-center py-8">
+      <div class="flex flex-col items-center gap-4">
+        <h1
+          class="text-gray-900 font-[700] text-4xl leading-tight text-center px-8"
+        >
+          From
+          <span
+            class="font-[750] bg-gradient-to-br from-[#2af498] to-[#009ffd] bg-clip-text text-transparent"
+            >Aotearoa</span
+          > with ❤️
+        </h1>
+      </div>
+    </section>
+
+    <!-- Trust & Credibility -->
+    <section
+      class="px-8 pt-10 pb-12 flex flex-col place-items-center bg-white rounded-xl border border-gray-300"
+    >
+      <p class="text-gray-900 text-lg font-[350] max-w-screen-sm">
+        StoryMate is designed and built by writers, game designers, UX experts
+        and educators in Aotearoa, New Zealand.
+        <br /><br />
+        <strong>Our goal is simple:</strong> empower storymakers with kickass
+        writing tools!
+      </p>
+    </section>
+
+    <div class="p-4"></div>
+  </div>
+
+  <!-- Call to Action -->
+  <section class="relative flex flex-col place-items-center py-24 w-full">
+    <!-- Background dots grid -->
+    <div
+      class="absolute inset-0 h-full w-full bg-[radial-gradient(hsl(214,22%,88%)_1px,transparent_1px)] [background-size:20px_20px]"
+    ></div>
+
+    <div class="relative isolate flex flex-col place-items-center place-content-center px-8">
+      <h2 class="text-gray-900 text-2xl font-bold text-center">
+        Get Started with StoryMate
+      </h2>
+
+      <div class="p-2"></div>
+
+      <p class="text-lg font-[350] text-center">
+        Write your next story with StoryMate. Sign up now and start creating.
+      </p>
+
+      <div class="p-3"></div>
+
+      <!-- StartWritingButton placeholder -->
+      <button
+        class="hover:text-[#18c5fe] hover:border-[#18c5fe] text-lg font-bold text-gray-800 btn btn-primary"
+      >
+        Start Writing
+      </button>
+    </div>
+  </section>
+
+  <!-- FooterAndModal placeholder -->
+  <!-- <FooterAndModal /> -->
+</main>
+<!-- End New Features Section -->
+
+
 <div class="min-h-[60vh]">
   <div class="pt-20 pb-8 px-7">
     <div class="max-w-lg mx-auto text-center">
