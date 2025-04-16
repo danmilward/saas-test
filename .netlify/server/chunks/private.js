@@ -1,0 +1,6 @@
+const PRIVATE_SUPABASE_SERVICE_ROLE = "your_service_role_key_here";
+const PRIVATE_STRIPE_API_KEY = "REPLACE_ME";
+export {
+  PRIVATE_STRIPE_API_KEY as P,
+  PRIVATE_SUPABASE_SERVICE_ROLE as a
+};
