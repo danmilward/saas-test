@@ -43,3 +43,5 @@ export const pricingPlans = [
     ],
   },
 ]
+
+export const WebsiteName: string = "StoryMate"
