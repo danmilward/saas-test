@@ -4,6 +4,8 @@
     WebsiteBaseUrl,
     WebsiteDescription,
   } from "./../../config"
+  import TypewriterButton from "../../lib/components/TypewriterButton.svelte";
+  import FeatureGallery from "../../lib/components/FeatureGallery.svelte";
 
   const ldJson = {
     "@context": "https://schema.org",
@@ -230,7 +232,7 @@
 </svelte:head>
 
 <!-- Hero Section -->
-<section class="relative w-full grid place-items-center">
+<section class="relative w-full grid place-items-center py-8">
   <!-- Background dots grid -->
   <div
     class="absolute inset-0 h-full w-full bg-[radial-gradient(hsl(214,22%,88%)_1px,transparent_1px)] [background-size:20px_20px]"
@@ -238,23 +240,27 @@
 
   <!-- Hero elements -->
   <div
-    class="isolate w-full max-w-screen-lg px-8 sm:px-20 pb-6 pt-12 max-[400px]:pt-4"
+    class="isolate w-full max-w-screen-lg px-8 sm:px-20 pb-10 pt-16 max-[400px]:pt-8"
   >
     <div class="w-full max-[400px]:px-0 gap-8">
-      <div class="pb-0 md:pb-6 sm:pb-3 flex flex-col items-center">
+      <div class="pb-0 md:pb-8 sm:pb-4 flex flex-col items-center">
         <div
-          class="flex flex-row items-center gap-4 max-[400px]:scale-75 origin-bottom-left duration-100 mb-12"
+          class="flex flex-row items-center gap-5 max-[400px]:scale-80 origin-bottom-left duration-100 mb-16"
         >
-          <!-- Logo placeholder -->
+          <img 
+            src="/images/storymate-logo-v2.svg" 
+            alt="StoryMate Logo" 
+            class="w-16 h-16 lg:w-20 lg:h-20"
+          />
           <h1
-            class="font-source-code-pro text-gray-900 text-4xl lg:text-6xl font-[400]"
+            class="font-source-code-pro text-gray-900 text-5xl lg:text-7xl font-[400]"
           >
             StoryMate
           </h1>
         </div>
 
         <h2
-          class="text-gray-900 text-3xl lg:text-4xl text-center mb-6 font-[400] leading-tight"
+          class="text-gray-900 text-4xl lg:text-5xl text-center mb-8 font-[400] leading-tight max-w-4xl"
         >
           No-Code
           <span
@@ -265,11 +271,14 @@
           with branching narratives, special effects, and structured content
         </h2>
 
-        <button
-          class="font-semibold text-white hover:border-[#18c5fe] max-[400px]:w-[calc(100vw-4rem)] bg-gradient-to-br from-[#2af498] to-[#009ffd] btn btn-lg"
-        >
-          Start Writing
-        </button>
+        <TypewriterButton 
+          text="Start writing now"
+          href="#"
+          className="text-xl py-4 px-8"
+          onClick={() => {
+            console.log('Button clicked!');
+          }}
+        />
       </div>
     </div>
   </div>
@@ -287,7 +296,7 @@
         An out-of-the-way writing experience
       </h1>
 
-      <!-- FeatureGallery placeholder -->
+      <FeatureGallery />
     </section>
 
     <div class="p-8"></div>
