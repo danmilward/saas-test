@@ -8,7 +8,7 @@ export const pricingPlans = [
     price: "$0",
     priceIntervalName: "per month",
     stripe_price_id: null,
-    features: ["MIT Licence", "Fast Performance", "Stripe Integration"],
+    features: ["Project Planner", "Distraction free writer ", "5 x saving slots", "AI proofreader"],
   },
   {
     id: "pro",
@@ -21,8 +21,9 @@ export const pricingPlans = [
     stripe_product_id: "prod_OXj1CcemGMWOlU",
     features: [
       "Everything in Free",
-      "Support us with fake money",
-      "Test the purchase experience",
+      "Unlimited projects",
+      "Design Mode (figma integration)",
+      "Agentic AI writer bots",
     ],
   },
   {
@@ -36,8 +37,9 @@ export const pricingPlans = [
     stripe_product_id: "prod_OXj20YNpHYOXi7",
     features: [
       "Everything in Pro",
-      "Try the 'upgrade plan' UX",
-      "Still actually free!",
+      "Admin to add team members",
+      "Project comments",
+      "xxx",
     ],
   },
 ]
