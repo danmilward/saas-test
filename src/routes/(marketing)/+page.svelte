@@ -6,6 +6,22 @@
   } from "./../../config"
   import TypewriterButton from "../../lib/components/TypewriterButton.svelte";
   import FeatureGallery from "../../lib/components/FeatureGallery.svelte";
+  
+  // Import individual icons directly
+  import PenLine from 'lucide-svelte/icons/pen-line';
+  import ListChecks from 'lucide-svelte/icons/list-checks'; 
+  import Palette from 'lucide-svelte/icons/palette';
+  import GitFork from 'lucide-svelte/icons/git-fork';
+  import Share from 'lucide-svelte/icons/share';
+  import Gamepad2 from 'lucide-svelte/icons/gamepad-2';
+  import MoveRight from 'lucide-svelte/icons/move-right';
+  import BookOpenText from 'lucide-svelte/icons/book-open-text';
+  import NotebookPen from 'lucide-svelte/icons/notebook-pen';
+  import Sparkle from 'lucide-svelte/icons/sparkle';
+  import BookOpenCheck from 'lucide-svelte/icons/book-open-check';
+  import BookUp2 from 'lucide-svelte/icons/book-up-2';
+  import Repeat2 from 'lucide-svelte/icons/repeat-2';
+  import ScanEye from 'lucide-svelte/icons/scan-eye';
 
   const ldJson = {
     "@context": "https://schema.org",
@@ -314,33 +330,54 @@
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        <!-- FeatureCard placeholder -->
+        <!-- Feature Cards -->
         <div class="p-4 border rounded">
-          <p>[Icon: PenLine] <strong>Distraction-Free Writing</strong></p>
+          <p>
+            <span class="w-7 h-7 translate-y-1 inline-block text-gray-700">
+              <PenLine size={20} />
+            </span>
+            <strong>Distraction-Free Writing</strong>
+          </p>
           <p>A clean, focused interface to keep you in the zone.</p>
         </div>
 
-        <!-- FeatureCard placeholder -->
         <div class="p-4 border rounded">
-          <p>[Icon: Workflow] <strong>Planning tools</strong></p>
+          <p>
+            <span class="w-7 h-7 translate-y-1 inline-block text-gray-700">
+              <ListChecks size={20} />
+            </span>
+            <strong>Planning tools</strong>
+          </p>
           <p>Visually structure and connect your ideas.</p>
         </div>
 
-        <!-- FeatureCard placeholder -->
         <div class="p-4 border rounded">
-          <p>[Icon: Palette] <strong>Customization</strong></p>
+          <p>
+            <span class="w-7 h-7 translate-y-1 inline-block text-gray-700">
+              <Palette size={20} />
+            </span>
+            <strong>Customization</strong>
+          </p>
           <p>Tailor the look and feel of your stories.</p>
         </div>
 
-        <!-- FeatureCard placeholder -->
         <div class="p-4 border rounded">
-          <p>[Icon: Split] <strong>Testing & Switching</strong></p>
+          <p>
+            <span class="w-7 h-7 translate-y-1 inline-block text-gray-700">
+              <GitFork size={20} />
+            </span>
+            <strong>Testing & Switching</strong>
+          </p>
           <p>Use conditional logic to create unique interactive fiction paths.</p>
         </div>
 
-        <!-- FeatureCard placeholder -->
         <div class="p-4 border rounded">
-          <p>[Icon: Share] <strong>Publishing</strong></p>
+          <p>
+            <span class="w-7 h-7 translate-y-1 inline-block text-gray-700">
+              <Share size={20} />
+            </span>
+            <strong>Publishing</strong>
+          </p>
           <p>Publish your stories to the world.</p>
         </div>
       </div>
@@ -433,9 +470,9 @@
           <div
             class="flex-none flex flex-row place-items-center place-content-center gap-2 text-gray-300"
           >
-            <span>[Icon: Gamepad2]</span>
-            <span>[Icon: MoveRight]</span>
-            <span>[Icon: BookOpenText]</span>
+            <span class="block"><Gamepad2 size={36} strokeWidth={1.5} /></span>
+            <span class="block"><MoveRight size={36} strokeWidth={1.5} /></span>
+            <span class="block"><BookOpenText size={36} strokeWidth={1.5} /></span>
           </div>
 
           <div class="border-b-2 border-[#d2d9e2] border-dashed w-full"></div>
@@ -461,9 +498,10 @@
       class="w-full flex flex-col place-items-center py-8 border-b-2 border-[#d2d9e2] border-dashed"
     >
       <h1 class="text-gray-900 font-[700] text-4xl leading-tight text-center px-8">
-        <span class="inline-block text-gray-500 scale-150 pr-4"
-          >[Icon: BookOpenText]</span
-        >Innovative
+        <span class="inline-block text-gray-500 scale-150 pr-4">
+          <BookOpenText strokeWidth={1.5} />
+        </span>
+        Innovative
         <span
           class="font-[750] bg-gradient-to-br from-[#2af498] to-[#009ffd] bg-clip-text text-transparent"
           >Storytelling</span
@@ -494,36 +532,36 @@
         <ul class="text-lg font-[350] space-y-2">
           <li class="group">
             <span class="w-7 h-7 translate-y-0.5 inline-block">
-              <span class="inline-block group-hover:hidden"
-                >[Icon: NotebookPen]</span
-              >
-              <span class="hidden group-hover:inline-block"
-                >[Icon: Sparkle]</span
-              >
+              <span class="inline-block group-hover:hidden">
+                <NotebookPen size={20} color="rgb(107,114,128)" />
+              </span>
+              <span class="hidden group-hover:inline-block">
+                <Sparkle size={20} color="#18c5fe" />
+              </span>
             </span>
             <strong>Intuitive story structuring</strong>
           </li>
 
           <li class="group">
             <span class="w-7 h-7 translate-y-0.5 inline-block">
-              <span class="inline-block group-hover:hidden"
-                >[Icon: BookOpenCheck]</span
-              >
-              <span class="hidden group-hover:inline-block"
-                >[Icon: Sparkle]</span
-              >
+              <span class="inline-block group-hover:hidden">
+                <BookOpenCheck size={20} color="rgb(107,114,128)" />
+              </span>
+              <span class="hidden group-hover:inline-block">
+                <Sparkle size={20} color="#18c5fe" />
+              </span>
             </span>
             <strong>Creative writing workflows</strong>
           </li>
 
           <li class="group">
             <span class="w-7 h-7 translate-y-0.5 inline-block">
-              <span class="inline-block group-hover:hidden"
-                >[Icon: BookUp2]</span
-              >
-              <span class="hidden group-hover:inline-block"
-                >[Icon: Sparkle]</span
-              >
+              <span class="inline-block group-hover:hidden">
+                <BookUp2 size={20} color="rgb(107,114,128)" />
+              </span>
+              <span class="hidden group-hover:inline-block">
+                <Sparkle size={20} color="#18c5fe" />
+              </span>
             </span>
             <strong>Publishing-ready output</strong>
           </li>
@@ -551,36 +589,36 @@
         <ul class="text-lg font-[350] space-y-2">
           <li class="group">
             <span class="w-7 h-7 translate-y-0.5 inline-block">
-              <span class="inline-block group-hover:hidden"
-                >[Icon: Gamepad2]</span
-              >
-              <span class="hidden group-hover:inline-block"
-                >[Icon: Sparkle]</span
-              >
+              <span class="inline-block group-hover:hidden">
+                <Gamepad2 size={20} color="rgb(107,114,128)" />
+              </span>
+              <span class="hidden group-hover:inline-block">
+                <Sparkle size={20} color="#18c5fe" />
+              </span>
             </span>
             <strong>Interactive storytelling expertise</strong>
           </li>
 
           <li class="group">
             <span class="w-7 h-7 translate-y-0.5 inline-block">
-              <span class="inline-block group-hover:hidden"
-                >[Icon: Repeat2]</span
-              >
-              <span class="hidden group-hover:inline-block"
-                >[Icon: Sparkle]</span
-              >
+              <span class="inline-block group-hover:hidden">
+                <Repeat2 size={20} color="rgb(107,114,128)" />
+              </span>
+              <span class="hidden group-hover:inline-block">
+                <Sparkle size={20} color="#18c5fe" />
+              </span>
             </span>
             <strong>Non-linear narrative planning</strong>
           </li>
 
           <li class="group">
             <span class="w-7 h-7 translate-y-0.5 inline-block">
-              <span class="inline-block group-hover:hidden"
-                >[Icon: ScanEye]</span
-              >
-              <span class="hidden group-hover:inline-block"
-                >[Icon: Sparkle]</span
-              >
+              <span class="inline-block group-hover:hidden">
+                <ScanEye size={20} color="rgb(107,114,128)" />
+              </span>
+              <span class="hidden group-hover:inline-block">
+                <Sparkle size={20} color="#18c5fe" />
+              </span>
             </span>
             <strong>Engagement-focused design</strong>
           </li>
@@ -659,138 +697,3 @@
   <!-- <FooterAndModal /> -->
 </main>
 <!-- End New Features Section -->
-
-
-<div class="min-h-[60vh]">
-  <div class="pt-20 pb-8 px-7">
-    <div class="max-w-lg mx-auto text-center">
-      <div
-        class="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-linear-to-r from-primary to-accent pb-2"
-      >
-        Explore the Features
-      </div>
-      <div class="mt-4 text-xl font-bold">
-        And try them on this
-        <span
-          class="underline decoration-secondary decoration-[3px] md:decoration-[4px]"
-        >
-          fully functional demo
-        </span>
-      </div>
-    </div>
-
-    <div
-      class="flex gap-6 mt-12 max-w-[1064px] mx-auto place-content-center flex-wrap"
-    >
-      {#each features as feature}
-        <div class="card bg-white w-[270px] min-h-[300px] flex-none shadow-xl">
-          <div class="card-body items-center text-center p-[24px] pt-[32px]">
-            <div>
-              <svg
-                width="50px"
-                height="50px"
-                class="mb-2 mt-1"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-                {@html feature.svgContent}
-              </svg>
-            </div>
-            <h2 class="card-title">
-              {feature.name}
-            </h2>
-            <p class="text-sm">
-              {feature.description}
-            </p>
-            {#if feature.link}
-              <a
-                href={feature.link}
-                class="pb-4"
-                target={feature.newPage ? "_blank" : ""}
-              >
-                <button
-                  class="btn btn-xs btn-outline rounded-full btn-primary min-w-[100px]"
-                  >{feature.linkText ? feature.linkText : "Try It"}</button
-                >
-              </a>
-            {/if}
-          </div>
-        </div>
-      {/each}
-    </div>
-  </div>
-</div>
-<div class="hero min-h-[60vh] mt-12">
-  <div class="hero-content text-center pb-16 pt-4 px-4">
-    <div class="max-w-lg">
-      <div
-        class="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-linear-to-r from-primary to-accent mt-4 pb-2"
-      >
-        See it in Action
-      </div>
-      <div
-        class="flex flex-col lg:flex-row mt-6 gap-6 place-content-center content-center"
-      >
-        <div class="hidden md:block">
-          <a href="https://criticalmoments.io" target="_blank" class="link">
-            <div class="mockup-browser border">
-              <div class="mockup-browser-toolbar">
-                <div class="input" style="background:#eee;">
-                  https://criticalmoments.io
-                </div>
-              </div>
-              <div class="flex justify-center">
-                <img
-                  alt="Screenshot of criticalmoments.io homepage"
-                  class="aspect-2044/1242"
-                  src="/images/example-home.png"
-                />
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="md:hidden">
-          <a href="https://criticalmoments.io" target="_blank" class="link">
-            <div class="card shadow-xl border overflow-hidden">
-              <img
-                alt="Screenshot of criticalmoments.io homepage"
-                class="aspect-2044/1242"
-                src="/images/example-home.png"
-              />
-            </div></a
-          >
-        </div>
-        <div class="min-w-[270px] lg:min-w-[420px] flex mt-6 lg:mt-0">
-          <div class="my-auto">
-            <div class="px-4 text-lg md:text-xl">
-              <a href="https://criticalmoments.io" class="" target="_blank"
-                >SaaS Starter was created by <span
-                  class="font-bold whitespace-nowrap">Critical Moments</span
-                >: a SDK to to help mobile apps
-                <span class="underline decoration-secondary decoration-[3px]"
-                  >increase conversion rates and app-ratings.</span
-                ></a
-              >
-            </div>
-            <div class="px-4 mt-6 text-lg md:text-xl">
-              Our <a
-                href="https://criticalmoments.io"
-                class="link font-bold"
-                target="_blank">webpage</a
-              > is the best example of SaaS Starter with style and real content.
-            </div>
-            <div class="mt-4 text-large">
-              <a href="https://criticalmoments.io" target="_blank">
-                <button class="btn btn-primary btn-wide mt-3"
-                  >See it in Action</button
-                >
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
